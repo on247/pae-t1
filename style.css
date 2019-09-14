@@ -1,0 +1,61 @@
+body{
+  margin:0;
+}
+header{
+    background-color: #36b6f3;
+    display: flex;
+}
+nav{
+  display: flex;
+  justify-content: center;;
+}
+.nav-item{
+    margin:10px;
+    display: flex;
+    justify-content: center;
+}
+.nav-item  a{
+  color:white;
+
+}
+#logo{
+  display: flex;
+  margin:15px;
+}
+#logo  span{
+  margin: auto
+}
+#text{
+  margin:10px;
+}
+
+@media (min-width: 767px) {
+  header{
+      height: 80px;
+  }
+  nav {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero{
+    height: 40vh;
+      width: 100%;
+      background-color: gray;
+  }
+  header{
+      min-height: 40px;
+      flex-direction: column;
+
+  }
+  video{
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    width:100%;
+    flex-grow: 1;
+
+  }
+}
