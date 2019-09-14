@@ -30,7 +30,6 @@ video{
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    font-size: 1.4em;
     margin: 10px;
 }
 .nav-item  a{
@@ -84,6 +83,10 @@ video{
   #nav-toggle{
     display: none;
   }
+  .nav-item{
+    font-size: 1.2em;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -110,5 +113,8 @@ video{
     width:100%;
     flex-grow: 1;
     display: none;
+  }
+  .nav-item{
+    font-size: 0.8em;
   }
 }
