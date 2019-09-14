@@ -7,16 +7,39 @@ header{
 }
 nav{
   display: flex;
-  justify-content: center;;
+  justify-content: center;
+}
+aside{
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  height: 90%;
+  margin: auto;
+  justify-self: flex-end;
+  padding: 10px;
 }
 .nav-item{
-    margin:10px;
+    padding:10px;
+    display: flex;
+    padding: 10px;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+    margin: 10px;
 }
 .nav-item  a{
   color:white;
-
+}
+.nav-item:hover{
+  background-color:#307cf0;
+}
+#hero{
+  background-color: #f2fcff;
+  display: flex;
 }
 #logo{
   display: flex;
@@ -25,24 +48,40 @@ nav{
 #logo  span{
   margin: auto
 }
-#text{
-  margin:10px;
+#hero-text{
+  font-size: 2em;
+  margin-top: 20px;
 }
+
 
 @media (min-width: 767px) {
   header{
       height: 80px;
   }
+  #hero{
+        height: 60vh;
+  }
+  #text{
+    margin: 50px;
+    font-size: 1.2em;
+    line-height: 2em;
+  }
   nav {
     flex-direction: row;
+    flex-grow: 1;
+  }
+  #nav-toggle{
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
+  #text{
+      margin: 10px;
+  }
   #hero{
     height: 40vh;
-      width: 100%;
-      background-color: gray;
+    width: 100%;
   }
   header{
       min-height: 40px;
