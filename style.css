@@ -1,5 +1,6 @@
 body{
   margin:0;
+  font-family: 'Nunito', sans-serif;
 }
 header{
     background-color: #36b6f3;
@@ -29,6 +30,7 @@ video{
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    font-size: 1.4em;
     margin: 10px;
 }
 .nav-item  a{
