@@ -52,15 +52,24 @@ video{
   font-size: 2em;
   margin-top: 20px;
 }
-
+#hero-image{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
 
 @media (min-width: 767px) {
   header{
       height: 80px;
   }
+  #hero-image{
+    display: none;
+  }
   #hero{
         height: 60vh;
   }
+
   #text{
     margin: 50px;
     font-size: 1.2em;
@@ -76,11 +85,14 @@ video{
 }
 
 @media (max-width: 767px) {
+  aside{
+    display: none;
+  }
   #text{
       margin: 10px;
   }
   #hero{
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
   }
   header{
@@ -95,6 +107,6 @@ video{
     flex-direction: column;
     width:100%;
     flex-grow: 1;
-
+    display: none;
   }
 }
